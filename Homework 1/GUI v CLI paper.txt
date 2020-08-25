@@ -1,0 +1,8 @@
+GUI - It is very little wonder why this has the become normal interface for everyday interactions with files.
+Having a visual representation makes it very easy to conceptualize how things are stored.
+
+CLI - It's been well over a decade since I've played around much with CLI functions in a Linux mint distro,
+but I remember with some practice how fast and effecient you could access different functions. It is clearly
+the more robust option for powerusers.
+
+Hope this was suffecient =)
