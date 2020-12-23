@@ -1,0 +1,40 @@
+<html>
+    <title>First JavaScript Page!</title>
+
+
+    <head>
+        <script>
+            document.write("Porkchop sandwhiches!");
+        
+            var favoriteNumber = 0;
+            var myName; //global variable myName -- seen EVERYWHERE 
+            var myHeight;
+            var blue, red, green;
+            blue = "0000FF";
+
+            
+            function changeName(name, number,height){
+                myName = name;
+                myHeight = height;
+                favoriteNumber = number;    
+                document.getElementById("myID").innerHTML = "Hello, my name is " + myName + ", I am " + myHeight + " feet tall, I'm the coolest hombre alive, and I want " + favoriteNumber +" TACOS!";
+            }
+
+        </script>
+
+    </head>
+    <body onload="changeName('Big Jimbo', 15,'Six');">
+        <br>
+        This HTML page has JavaScript on it. What do you see?
+        <br>
+        <div id="myID">This is my favorite text</div>
+        <button class="btn btn-primary"> Submit! </button>
+
+    </body>
+
+<script>
+
+</script>
+
+
+    </html>
