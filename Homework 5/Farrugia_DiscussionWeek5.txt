@@ -1,0 +1,12 @@
+Inspiration? Who or what has or still does inspire you?
+Talk about what inspires you to create art, express yourself, and believe in yourself.
+
+
+	I am continuously inspired by visinoaries and futurists. People who are able to look at the trends of today and see
+how they are almost certain to shape our society in the future. Andrew Yang, Elon Musk, Tim Bernes-Lee and Bill Joy are all people who
+inspireme.
+
+	A quick note: I am very aware that my Alice project is incomplete. I really dove down a rabithole (pun intended) and ended up
+sinking hours into trying to build something that was probably too ambitious for a first project. I've included where I got to and I'd 
+love to figure out what step I am missing at somepoint in the future, but in the interest of finishing everything else I am going to leave
+it for now.

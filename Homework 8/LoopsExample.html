@@ -1,0 +1,19 @@
+<html>
+    <title>for loops</title>
+    <head>
+        <script>
+            function theForLoop()
+            {
+                var result = "";
+                for(var i = 0; i < 5; i++)
+                {
+                    result += i + "<br>";
+                }
+                document.getElementById("theResult").innerHTML = result;
+            }  
+        </script>
+    </head>
+    <body onload="theForLoop();">
+        <div id="theResult"></div> 
+    </body>
+ </html>

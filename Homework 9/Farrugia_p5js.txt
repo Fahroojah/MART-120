@@ -1,0 +1,23 @@
+function setup() {
+  createCanvas(200, 300
+              );
+}
+
+function draw() {
+  background(220);
+}
+
+
+function draw() {
+  background(220);
+  ellipse(100,100,50,60);
+  circle(100,50,50);
+  circle(90,45,5);
+  circle(110,45,5);
+  triangle(50, 30, 100, 15, 150, 30);
+ line(90, 60, 110, 60);
+  
+  
+  textSize(25)
+  text('-JF', 150, 230);
+}

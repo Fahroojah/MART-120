@@ -1,0 +1,75 @@
+var headX = 100
+var headY = 50;
+var headDirection = 1;
+
+var bodyX = 100;
+var bodyY = 100;
+var bodyDirection = 1
+
+
+var size = 22;
+var count = 0;
+var sizeDirection = 2;
+
+var movement;
+
+function setup() {
+  createCanvas(200, 300);
+  
+  movement = Math.floor(Math.random()*10)
+              
+}
+
+function draw() {
+  background(220);
+  
+  //body
+  ellipse(bodyX,bodyY,50,60);
+  bodyY+=movement;
+  if(bodyY >=150 || bodyY <=50)
+    {
+      movement *=-1;
+    }
+ 
+  
+  //head
+  fill(25,204,0);
+  circle(headX,headY,50);
+  headX+=headDirection;
+  if(headX >=150 || headX <=50)
+    {
+      headDirection *=-1;
+    }
+  
+  //left eye
+ fill(255,255,255);
+  circle(90,45,5);
+  fill(0,0,0)
+  //right eye
+  circle(110,45,5);
+  
+  //hat
+  fill (105,85,0)
+  triangle(70, 30, 100, 15, 130, 30); 
+  
+   // mouth
+  line(90, 60, 110, 60);
+  
+   // left arm
+  line(60, 120, 80, 80); 
+  
+  // right arm
+  line(140, 120, 120, 80);
+  
+    fill(120);
+    textSize(size);
+    size+= sizeDirection;
+  
+    count++;
+    if(count > 10)
+    {
+        sizeDirection *=-.9;
+        count = 0;
+    }
+    text('-JF', 100, 240);
+}

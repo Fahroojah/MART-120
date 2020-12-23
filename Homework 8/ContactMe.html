@@ -1,0 +1,52 @@
+<html>
+<title> Contact Me </title>
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+        
+</head>
+<script>
+  function checkForm()
+  {
+      var name;
+      name =document.getElementById("inputName").value;
+      if(name == "")
+      {
+          window.alert("Ya done goofed!");
+          document.getElementById("inputName").style.backgroundColor = "red";
+          document.getElementById("inputName").focus();
+          // I think that some of the Bootstrap CSS is somehow overriding the inline style tag?
+      }
+      else {
+        document.getElementById("inputName").style.backgroundColor = "white";
+
+      }
+
+  }
+
+</script>
+
+
+<body>
+
+    <form>
+      <div class="mb-3">
+        <label for="inputName" class="form-label">Full Name</label>
+        <input type="name" class="form-control" id="inputName">
+      </div>
+    <div class="mb-3">
+      <label for="InputEmail" class="form-label">Email address</label>
+      <input type="email" class="form-control" id="InputEmail" aria-describedby="emailHelp">
+      <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+    </div>
+    <div class="mb-3">
+      <label for="InputPassword" class="form-label">Password</label>
+      <input type="password" class="form-control" id="InputPassword">
+    </div>
+    <div class="mb-3 form-check">
+      <input type="checkbox" class="form-check-input" id="Check">
+      <label class="form-check-label" for="Check">You must obey.</label>
+    </div>
+    <button type="submit" class="btn btn-primary" onClick="checkForm()"> Submit</button>
+  </form>
+</body>
+<html>

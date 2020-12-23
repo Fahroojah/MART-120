@@ -1,0 +1,25 @@
+span.{
+    color:white;
+    background-color:red;
+}
+
+span.blueColor{
+        color:blue;
+        font-family:arial;
+        font-size:24px;
+    }
+#blueBoi {
+	background-color:white;
+	color:blue;
+    font-size:48px;
+} 
+    
+.myClass {
+    background-color: white;
+    font-style: italic;
+    font-size: 52px;
+    color: orange;
+    font-weight: bold;
+    
+}
+
