@@ -1,0 +1,119 @@
+// Circle character variables
+    var x = 50;
+    var y = 50;
+    var diameter = 25;
+
+ // i'm electing to skip the mouse functionaility
+   // var mousex = 0;
+    //var mousey = 0;
+
+// key press variables
+  var w =87;
+  var s =83;
+  var a =65;
+  var d= 68;
+
+//rectangle variables
+  var rect1X = 400;
+  var rect1Y = 100;
+  var rect2X = 200;
+  var rect2Y = 100;
+
+
+//rectangle movement
+  var movement = 6
+  var movementrandom =Math.floor(Math.random() * 10);
+  
+    function setup() 
+    {
+      createCanvas(600, 400);
+    
+    }
+  
+    function draw() 
+    {
+      
+      background(120,150,150);
+    
+      createBorders()
+      
+      // 1st rectangle "rect1"
+        rect(rect1X,rect1Y,20,150);
+      if(rect1Y >= 250 || rect1Y <= 0)
+        {
+       movement *= -1;
+        }
+        rect1Y += movement;
+    
+      // 2nd rectangle "rect2"
+
+      rect(rect2X,rect2Y,20,150);
+       if(rect2Y >= 250 || rect2Y <= 0)
+        {
+       movementrandom *= -1;
+        }
+      rect2Y += movementrandom;
+      
+      textSize(16);
+      text("Run away! ->>", width-120,height-20);
+      
+function createBorders()
+
+      {
+  // top border
+      rect(0,0,width,10);
+      //left border
+      rect(0,0,10,height);
+      //bottom-border
+      rect(0,height-10,width,10);
+      //right upper border
+      rect(width-10,0,10,height-50);
+}             
+      
+      
+      //'character circle'
+      fill(0, 15, 89);
+      circle(x, y, diameter);
+    //this makes the cirlce pulse; kinda don't understand how the math works >.>
+      if (diameter <= 50) 
+      {
+        diameter +=.5;
+      } 
+      else if (diameter >=50)   
+        diameter += -12 ;
+  
+    circleCheck()
+      
+function circleCheck()
+      
+    {   // This checks the finish and resets the circle, display message
+      
+      if(x>=width-25 && y>= height-25)
+        {
+      x=50;
+      y=50;
+      diameter=51
+      fill(0);
+      stroke(5);
+      textSize(45);
+      text("Ya done did it!", width/2-50, height/2-50);
+        }     
+    }
+    
+// movement 
+      if (keyIsDown(s)) 
+      {
+        y += 10;
+      } 
+      else if (keyIsDown(w)) 
+      {
+        y -= 10;
+      }
+      else if (keyIsDown(a))
+  
+        x -= 10;
+      
+      else if (keyIsDown(d))
+        x += 10;
+     
+    }
